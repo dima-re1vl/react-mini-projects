@@ -4,11 +4,10 @@ import List from "./List";
 
 const ListContainer = () => {
   const state = useContext(StateComponent);
-
   return (
     <ul>
-      {state.map((item) => (
-        <List item={item} />
+      {Object.values(state.getCards()).map((item) => (
+        <List item={item} key={item.name} />
       ))}
     </ul>
   );

@@ -5,13 +5,12 @@ import Card from "../Card/Card";
 
 const Home = () => {
   const state = useContext(StateComponent);
-
   return (
     <div className="home">
       <div className="container">
         <div className={s.cards}>
-          {state.map((item) => (
-            <Card item={item} />
+          {Object.values(state.getCards()).map((item) => (
+            <Card item={item} key={item.name} />
           ))}
         </div>
       </div>

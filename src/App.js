@@ -12,7 +12,10 @@ function App() {
         <ListContainer />
       </div>
       <div className='content'>
-        <Home />
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+
+        </Routes>
       </div>
 
     </div>

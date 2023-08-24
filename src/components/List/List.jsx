@@ -6,7 +6,7 @@ const List = (props) => {
   return (
     <li>
       <NavLink to={props.item.link}>
-        <div className={s.link_name}>{props.item.name}</div>
+        <span className={s.link_name}>{props.item.name}</span>
       </NavLink>
     </li>
   );
