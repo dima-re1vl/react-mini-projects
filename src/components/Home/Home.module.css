@@ -2,3 +2,24 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
+@media screen and (max-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*768px - 992px*/
+@media screen and (max-width: 992px) {
+}
+
+/*576px - 768px*/
+@media screen and (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*320px - 576px*/
+@media screen and (max-width: 576px) {
+}
