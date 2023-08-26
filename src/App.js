@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './components/Home/Home';
 import Header from './components/Header/Header';
 import ListContainer from './components/List/ListContainer'
+import PasswordGeneratorPage from './components/PasswordGenerator/PasswordGeneratorPage/PasswordGeneratorPage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className='content'>
         <Routes>
           <Route path='/' element={<Home />}></Route>
+          <Route path='/passwordGenerator' element={<PasswordGeneratorPage />}></Route>
 
         </Routes>
       </div>

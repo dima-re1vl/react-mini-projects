@@ -4,6 +4,7 @@ import StateComponent from "../State/StateComponent";
 import Card from "../Card/Card";
 
 const Home = () => {
+  document.title = "Home";
   const state = useContext(StateComponent);
   return (
     <div className="home">

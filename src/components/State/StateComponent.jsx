@@ -10,7 +10,37 @@ let state = {
         "Welcome to our site for generating personal passwords! Whether you need a strong passcode or a creative security key, our intuitive tool lets you customize length, numbers, symbols, and letters. Ensure your online security with unique passwords easily created here.",
     },
   },
-  _passwordGeneratorState: {},
+  _passwordGeneratorState: {
+    password: "",
+    uppers: false,
+    lowers: false,
+    symbols: false,
+    numbers: false,
+    length: 4,
+
+    setPassword(value) {
+      this.inputText = value;
+    },
+    setLength() {
+      this.length = document.querySelector(".inputNumber").value;
+    },
+    setValue(value) {
+      switch (value) {
+        case "uppers":
+          this.uppers = !this.uppers;
+          break;
+        case "lowers":
+          this.lowers = !this.lowers;
+          break;
+        case "symbols":
+          this.symbols = !this.symbols;
+          break;
+        case "numbers":
+          this.numbers = !this.numbers;
+          break;
+      }
+    },
+  },
 
   getCards() {
     return this._cards;

@@ -53,6 +53,15 @@ hr {
   width: 1170px;
 }
 
+.container-app {
+  margin: 0 auto;
+  width: 1170px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .app-wrapper {
   display: grid;
   grid-template-areas:
