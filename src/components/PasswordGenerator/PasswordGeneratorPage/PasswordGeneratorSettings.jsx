@@ -1,4 +1,4 @@
-import React, { Fragment, useContext } from "react";
+import React, { Fragment } from "react";
 import s from "./PasswordGenerator.module.css";
 
 const PasswordGeneratorSettings = (props) => {
@@ -24,7 +24,7 @@ const PasswordGeneratorSettings = (props) => {
           min={0}
           max={20}
         />
-        <h3>{`<-- Password Length`}</h3>
+        <h3>{`<-- Password Length [0, 20]`}</h3>
       </div>
 
       <div className={s.checkboxes}>

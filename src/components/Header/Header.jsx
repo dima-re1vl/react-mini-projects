@@ -7,11 +7,11 @@ const Header = () => {
   return (
     <div className={`header ${s.header}`}>
       <div className={`container ${s.container}`}>
-        <NavLink to="/">
+        <NavLink to="/home">
           <img src={logo} alt={logo} className={s.logo} />
         </NavLink>
         <div className={s.links}>
-          <NavLink to="/">
+          <NavLink to="/home">
             <i className={`fa-solid fa-house ${s.home_logo} ${s.logo}`}></i>
           </NavLink>
           <NavLink to="/about">
